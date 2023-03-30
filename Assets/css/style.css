@@ -8,7 +8,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Sono', sans-serif;
-
 }
 
 footer {
@@ -23,9 +22,6 @@ footer {
   height: 220px;
   align-items: center;
   justify-content: space-between;
-  
-
-
 }
 
 .name {
@@ -60,8 +56,6 @@ footer {
   text-decoration: underline;
   cursor: pointer;
   transition: 0.5s;
-
-
 }
 
 .navbar ul li:hover {
@@ -138,7 +132,6 @@ section {
 }
 
 .section__title {
-
   border-right: solid 6px rgb(34, 33, 33);
   margin-right: 20px;
   padding-right: 20px;
@@ -148,15 +141,30 @@ section {
   font-size: 20px;
   font-family: 'Sono', sans-serif;  
 }
+.four-projects{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  gap:20px;
+}
+.four-projects > div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  gap:20px;
+}
 
 .section__content {
-  text-align:start;
-  margin-right: 36px;
-  padding: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: space-around;
+
+  display:flex;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
 }
 .aboutmyself:hover {
   margin: 20px;
@@ -170,8 +178,6 @@ section {
   transition: 0.5s;
 }
 
-
-
 footer {
   color: gold;
   font-size: 30px;
@@ -182,63 +188,83 @@ footer {
   height: 200px;
   
 }
+
 .baby__yoda {
   color: greenyellow;
 }
 
 .surf__report {
-  color: gold;
-  border: solid 4px white;
-  padding: 200px;
-  padding-right: 600px;
+  color: black;
+  border: solid 4px gold;
   background-image: url("https://t4.ftcdn.net/jpg/00/61/98/17/240_F_61981708_DJ1lpCUG47uguHpTGkMZhi5KKqdlM0mQ.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex; 
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: flex-start;
   font-size: 25px;
-  
+  width:100%;
+  height:500px;
 }
 
+.surf__report div{
+  background-color: rgb(46, 46, 46);
+  padding:20px;
+  margin:10px;
+  transition: 0.5s;
+}
+.led__wall,.calculator,.pastel__puzzle,.run__buddy{
+  width:100%;
+  height:300px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+.led__wall:hover,.calculator:hover,.pastel__puzzle:hover,.run__buddy:hover,.surf__report:hover{
+filter:brightness(135%);
+color: gold;
+}
+.led__wall div,.calculator div,.pastel__puzzle div,.run__buddy div{
+  background-color: rgb(46, 46, 46);
+  padding:10px;
+  margin:5px;
+}
 .led__wall {
-  color: gold;
-  border: solid 4px white;
-  padding: 200px;
+  color: black;
+  border: solid 4px gold;
   background-image: url("https://t3.ftcdn.net/jpg/00/25/36/72/240_F_25367283_rPqvxbX6uCFXQTuZXoTS15SFdAbp0mYh.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  display: flex; justify-content: flex-start; align-items: flex-end;
 
-  
 }
-
 
 .calculator  {
   color: black;
-  border: solid 4px white;
-  padding: 200px;
+  border: solid 4px gold;
   background-image: url("https://t3.ftcdn.net/jpg/00/84/14/26/240_F_84142679_v3tzXdUup2tSEVHtAJRmp2Pj7Zj3vn7h.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  
-  
+
 }
 
 .pastel__puzzle {
   color: black;
-  border: solid 4px white;
-  padding: 100px;
+  border: solid 4px gold;
   background-image: url("https://t4.ftcdn.net/jpg/01/45/94/57/240_F_145945707_slcEtb8nIts4KRM7Thqk2NPMdohG4w5m.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  
 }
 
 .run__buddy {
-
+  color: black;
+  border: solid 4px gold;
+  
+  background-image: url("https://t4.ftcdn.net/jpg/01/45/94/57/240_F_145945707_slcEtb8nIts4KRM7Thqk2NPMdohG4w5m.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 
